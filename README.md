@@ -2,7 +2,7 @@
 
 A high-performance, visually stunning personal portfolio showcasing front-end projects and experience. Built with a focus on **Micro-interactions**, **Performance**, and **Clean Code**.
 
-![Portfolio Preview](/public/assets/portfolio-preview.png) <div align="center">
+<div align="center">
   <a href="https://your-portfolio-link.vercel.app/"><strong>Live Demo »</strong></a>
   ·
   <a href="https://github.com/ahmedemad26/portfolio/issues">Report Bug</a>
@@ -14,11 +14,11 @@ A high-performance, visually stunning personal portfolio showcasing front-end pr
 
 ## ✨ Key Features
 
-- **Interactive UI:** Smooth animations using **Framer Motion**.
+- **Interactive UI:** Smooth animations and micro-interactions using **Framer Motion**.
 - **Spotlight Effects:** Dynamic mouse-tracking cards for an immersive dark-mode experience.
-- **Magnetic Components:** Interactive buttons that react to user proximity.
-- **Fully Responsive:** Optimized for all screen sizes from mobile to ultra-wide monitors.
-- **Modern Tech:** Built with the latest stable versions of **React 19** and **Next.js**.
+- **Magnetic Components:** Interactive buttons that react to user proximity for enhanced UX.
+- **Fully Responsive:** Optimized for a seamless experience across all screen sizes.
+- **Modern Tech:** Developed using the latest stable versions of **React 19** and **Next.js**.
 
 ## 🛠 Tech Stack
 
