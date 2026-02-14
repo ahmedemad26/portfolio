@@ -15,7 +15,7 @@ export function Hero() {
 
       <div className="space-y-2">
         <h1 className="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-          Ahmed Emad
+          Ahmed Emad Mohamed
         </h1>
         <p className="text-xl text-zinc-400 min-h-[1.5em]">
           {chars.map((char, i) => (
