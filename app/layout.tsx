@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Emad | Front-End Developer",
+  title: "Ahmed Emad Mohamed | Front-End Developer | React & Next.js",
 
   description:
-    "Ahmed Emad is a Front-End Developer specializing in React.js, Next.js, and TypeScript. Building scalable, high-performance web applications with modern UI/UX.",
+    "Ahmed Emad Mohamed is a Front-End Developer specialized in React.js, Next.js, and TypeScript, building scalable, high-performance, production-ready web applications with modern UI/UX.",
 
   metadataBase: new URL("https://ahmedemad-portfolio.vercel.app"),
 
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "Ahmed Emad",
+      name: "Ahmed Emad Mohamed",
       url: "https://github.com/ahmedemad26",
     },
   ],
 
   openGraph: {
-    title: "Ahmed Emad | Front-End Developer",
+    title: "Ahmed Emad Mohamed | Front-End Developer | React & Next.js",
     description:
-      "Explore Ahmed Emad's portfolio showcasing modern React.js and Next.js projects including real-world scalable applications.",
+      "Explore Ahmed Emad Mohamed's portfolio showcasing modern React.js and Next.js projects, including real-world scalable applications.",
     url: "https://ahmedemad-portfolio.vercel.app",
     siteName: "Ahmed Emad Portfolio",
     locale: "en_US",
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Ahmed Emad Portfolio",
+        alt: "Ahmed Emad Mohamed Portfolio",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Ahmed Emad | Front-End Developer",
+    title: "Ahmed Emad Mohamed | Front-End Developer",
     description:
-      "Portfolio of Ahmed Emad — React.js & Next.js Developer building modern web applications.",
+      "Portfolio of Ahmed Emad Mohamed — React.js & Next.js Developer building modern, scalable web applications.",
     images: ["/og-image.png"],
   },
 
