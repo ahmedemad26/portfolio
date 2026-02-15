@@ -1,4 +1,4 @@
-# 🚀 Ahmed Emad | Portfolio 2.0
+# 🚀 Ahmed Emad | Portfolio 
 
 > A high-performance personal portfolio focused on micro-interactions and sleek aesthetics.
 
@@ -17,10 +17,6 @@
 - **Dynamic Theming:** Smooth transition between Dark/Light modes with zero layout shift.
 - **Image Optimization:** Using `next/image` for WebP delivery and lazy loading.
 
-## 📸 Preview
-<p align="center">
-  <img src="./public/screenshot.png" alt="Portfolio Preview" width="800px" />
-</p>
 
 ## ⚡ Performance Matrix
 | Category | Score |
