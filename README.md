@@ -1,35 +1,27 @@
-# 🚀 Ahmed Emad — Front-End Developer
+# Ahmed Emad — Front-End Developer
 
-A high-performance personal portfolio showcasing modern web applications. Built with a focus on **Micro-interactions**, **Performance**, and **Clean Code**.
+Personal portfolio focused on **micro-interactions**, **performance**, and **clean code**.
 
-<div align="center">
-  <a href="https://ahmedemad-portfolio.vercel.app/"><strong>🌐 View Live Portfolio</strong></a>
-</div>
+<p align="center">
+  <a href="https://ahmedemad-portfolio.vercel.app/"><strong>🌐 View Live</strong></a>
+</p>
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-- **Interactive UI:** Smooth animations using **Framer Motion**.
-- **Spotlight Effects:** Dynamic mouse-tracking cards for an immersive experience.
-- **Magnetic Components:** Interactive buttons that react to user proximity.
-- **Fully Responsive:** Optimized for all screen sizes.
+- **Interactive UI** — Smooth animations with Framer Motion
+- **Spotlight effects** — Mouse-tracking cards
+- **Magnetic buttons** — Proximity-reactive components
+- **Fully responsive** — All screen sizes
 
-## 🛠 Tech Stack
-
-- **Core:** Next.js 16 (App Router), React 19, TypeScript.
-- **Styling:** Tailwind CSS 4.
-- **Animation:** Framer Motion.
-- **Deployment:** Vercel.
-
-## 🚀 Getting Started
+## 🚀 Run locally
 
 ```bash
-# Clone the repo
-git clone [https://github.com/ahmedemad26/portfolio.git](https://github.com/ahmedemad26/portfolio.git)
+git clone https://github.com/ahmedemad26/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
 
-# Install dependencies
-yarn install
-
-# Run development server
-yarn dev
+Then open [http://localhost:3000](http://localhost:3000).
