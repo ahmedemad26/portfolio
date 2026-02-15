@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ahmed Emad Mohamed | Front-End Developer | React & Next.js",
 
+  icons: {
+    icon: [{ url: "/assets/favicon.ico", type: "image/ico" }],
+    apple: [{ url: "/assets/favicon.ico", type: "image/ico" }],
+  },
+
   description:
     "Ahmed Emad Mohamed is a Front-End Developer specialized in React.js, Next.js, and TypeScript, building scalable, high-performance, production-ready web applications with modern UI/UX.",
 
