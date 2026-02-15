@@ -1,18 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
-
-type BaseProps = {
-  children: React.ReactNode;
-  className?: string;
-  strength?: number;
-};
-
-type MagneticButtonProps = BaseProps &
-  (
-    | (React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string })
-    | (React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: never })
-  );
+import type { MagneticButtonProps } from "@/lib/types";
 
 export function MagneticButton({
   children,

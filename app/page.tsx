@@ -3,7 +3,8 @@ import { Hero } from "./_components/Hero";
 import { ProfileCard } from "./_components/ProfileCard";
 import { AboutSection } from "./_components/AboutSection";
 import { SkillsSection } from "./_components/SkillsSection";
-import { ProjectsSection, type Project } from "./_components/ProjectsSection";
+import { ProjectsSection } from "./_components/ProjectsSection";
+import type { Project } from "@/lib/types";
 import { ContactSection } from "./_components/ContactSection";
 import { ExperienceSection } from "./_components/ExperienceSection";
 const projects: Project[] = [

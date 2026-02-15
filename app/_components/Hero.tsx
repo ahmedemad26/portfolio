@@ -1,8 +1,7 @@
 "use client";
 
-import React from "react";
 import { motion } from "framer-motion";
-import { MagneticButton } from "./MagneticButton";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 
 const SUBTITLE = "Front-End Developer | React.js & Next.js";
 

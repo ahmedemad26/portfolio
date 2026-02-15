@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
-import { MagneticButton } from "./MagneticButton";
+import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 
 export function ContactSection() {
+  // Spotlight effect
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
 

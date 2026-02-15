@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+/* Navigation links */
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
