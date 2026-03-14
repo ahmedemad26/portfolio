@@ -84,6 +84,19 @@ export function ContactSection() {
               </a>
             </div>
 
+            {/* CV / Resume */}
+            <div className="flex flex-col space-y-1">
+              <span className="text-zinc-500 text-[10px] uppercase tracking-[0.2em] font-bold">Resume</span>
+              <a
+                href="https://drive.google.com/file/d/1R80SVHl5AB8g8zJxhlGmVHFC0nCAeFJu/view?usp=sharing"
+                className="font-medium text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1.5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View My CV
+              </a>
+            </div>
+
             <MagneticButton
               href="mailto:ahmeedemadmohamed@gmail.com"
               className="mt-4 inline-flex items-center justify-center rounded-xl bg-emerald-500 px-8 py-3 text-sm font-bold text-black shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400 active:scale-95"

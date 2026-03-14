@@ -27,16 +27,16 @@ export function ExperienceSection() {
 
           <ul className="mt-4 space-y-3 text-zinc-300 list-disc pl-4">
             <li>
-              Developed and maintained <strong>15+ responsive web applications</strong> using React.js and Next.js[cite: 14].
+              Developed and maintained <strong>15+ responsive web applications</strong> using React.js and Next.js.
             </li>
             <li>
-              Built a library of <strong>20+ reusable UI components</strong> using Tailwind CSS and ShadCN UI[cite: 15].
+              Built a library of <strong>20+ reusable UI components</strong> using Tailwind CSS and ShadCN UI.
             </li>
             <li>
-              Optimized web performance using <strong>SSR and Image Optimization</strong>, improving load times[cite: 17].
+              Optimized web performance using <strong>SSR and Image Optimization</strong>, improving load times.
             </li>
             <li>
-              Collaborated in <strong>30+ code reviews</strong> and Agile ceremonies within a 5-member team[cite: 15, 19].
+              Collaborated in <strong>30+ code reviews</strong> and Agile ceremonies within a 5-member team.
             </li>
           </ul>
         </div>

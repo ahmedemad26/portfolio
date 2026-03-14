@@ -14,9 +14,8 @@ const projects: Project[] = [
       "A bilingual (EN/AR) flower e‑commerce platform with RTL support, dark mode, secure authentication and a modern shopping experience.",
     tech: ["React", "Next.js", "Tailwind CSS", "React Query"],
     image: "/assets/rose-app.png",
-    codeLink: "https://github.com/Aya-Mohammed-Hussien/Rose-App",
-    liveLink:
-      "https://drive.google.com/file/d/1MemQC1HfZsszkdPkSaWFRSMYA1fI7PLm/view?usp=drive_link",
+    codeLink: "https://github.com/ahmedemad26/Rose-App",
+    liveLink: "https://rose-app-six.vercel.app/",
   },
   {
     title: "Exclusive — E‑commerce Platform",

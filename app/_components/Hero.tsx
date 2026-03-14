@@ -48,6 +48,15 @@ export function Hero() {
         </MagneticButton>
 
         <MagneticButton
+          href="https://drive.google.com/file/d/1R80SVHl5AB8g8zJxhlGmVHFC0nCAeFJu/view?usp=sharing"
+          className="inline-flex h-11 items-center justify-center rounded-lg border border-emerald-500/50 bg-emerald-500/10 px-6 text-sm font-medium text-emerald-400 transition hover:border-emerald-400 hover:bg-emerald-500/20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View My CV
+        </MagneticButton>
+
+        <MagneticButton
           href="#contact"
           className="inline-flex h-11 items-center justify-center rounded-lg border border-zinc-700 bg-transparent px-6 text-sm font-medium text-white transition hover:border-zinc-500 hover:bg-zinc-900"
         >
