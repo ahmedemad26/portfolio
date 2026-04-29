@@ -39,18 +39,24 @@ const projects: Project[] = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-950 via-zinc-900 to-black text-zinc-50">
-      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-16 pt-6 sm:px-8 lg:px-12 lg:pt-12">
+    <div className="page-shell text-foreground">
+      <div className="mx-auto flex min-h-screen max-w-6xl flex-col px-4 pb-20 pt-6 sm:px-6 lg:px-10 lg:pt-10">
         <Navbar />
 
-        <main className="mt-10 flex flex-1 flex-col gap-16 md:mt-14">
-          {/* Hero + Profile */}
-          <section className="grid gap-10 md:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] md:items-center">
+        <main
+          id="main"
+          className="mt-8 flex flex-1 flex-col gap-20 md:mt-12 md:gap-24 lg:gap-28"
+          tabIndex={-1}
+        >
+          <section className="relative grid items-center gap-12 lg:grid-cols-[minmax(0,1.55fr)_minmax(0,1fr)] lg:gap-16">
+            <div
+              className="pointer-events-none absolute -right-24 top-0 hidden h-[min(90vh,640px)] w-[min(70vw,520px)] rounded-full bg-[radial-gradient(ellipse_at_center,var(--violet-orb),transparent_68%)] blur-3xl lg:block"
+              aria-hidden
+            />
             <Hero />
             <ProfileCard />
           </section>
 
-          {/* About / Skills / Experience / Projects / Contact */}
           <AboutSection />
           <SkillsSection />
           <ExperienceSection />
@@ -58,7 +64,7 @@ export default function Home() {
           <ContactSection />
         </main>
 
-        <footer className="mt-10 border-t border-zinc-800 pt-4 text-xs text-zinc-500">
+        <footer className="mt-16 border-t border-border pt-8 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Ahmed Emad. All rights reserved.</p>
         </footer>
       </div>

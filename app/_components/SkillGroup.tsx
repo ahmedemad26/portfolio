@@ -2,18 +2,20 @@ import type { SkillGroupProps } from "@/lib/types";
 
 export function SkillGroup({ title, items }: SkillGroupProps) {
   return (
-    <div className="group relative overflow-hidden rounded-xl border border-zinc-800/80 bg-zinc-900/40 p-5 shadow-lg transition-all duration-300 hover:border-emerald-500/40 hover:bg-zinc-900/60 hover:shadow-emerald-500/5 hover:shadow-xl">
-      {/* Accent line */}
-      <div className="absolute left-0 top-0 h-full w-1 rounded-l-xl bg-linear-to-b from-emerald-500/80 to-emerald-600/40 opacity-60 transition-opacity group-hover:opacity-100" />
-      <div className="relative space-y-4 pl-1">
-        <h3 className="text-sm font-semibold uppercase tracking-wider text-emerald-400/90">
+    <div className="group relative overflow-hidden rounded-2xl border border-border bg-surface/90 p-5 shadow-[0_12px_40px_-20px_rgba(0,0,0,0.4)] backdrop-blur-xl transition duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_52px_-14px_rgba(167,139,250,0.18)] sm:p-6">
+      <div
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        aria-hidden
+      />
+      <div className="relative space-y-4">
+        <h3 className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-accent">
           {title}
         </h3>
         <div className="flex flex-wrap gap-2">
           {items.map((item) => (
             <span
               key={item}
-              className="rounded-lg bg-zinc-800/80 px-3 py-1.5 text-xs font-medium text-zinc-200 ring-1 ring-zinc-700/50 transition-all duration-200 hover:bg-emerald-500/15 hover:ring-emerald-500/30 hover:text-emerald-300"
+              className="rounded-lg border border-border bg-surface-raised/50 px-3 py-1.5 text-xs font-medium text-foreground/90 transition duration-200 hover:border-accent/30 hover:bg-accent/10 hover:text-accent"
             >
               {item}
             </span>

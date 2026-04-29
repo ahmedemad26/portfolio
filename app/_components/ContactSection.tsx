@@ -2,81 +2,79 @@
 
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
+import { SectionHeader } from "./ui/SectionHeader";
 
 export function ContactSection() {
-  // Spotlight effect
-  let mouseX = useMotionValue(0);
-  let mouseY = useMotionValue(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
   function handleMouseMove({ currentTarget, clientX, clientY }: React.MouseEvent) {
-    let { left, top } = currentTarget.getBoundingClientRect();
+    const { left, top } = currentTarget.getBoundingClientRect();
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
 
   return (
-    <section id="contact" className="py-12 sm:py-24">
-      {/* Title */}
-      <div className="text-center space-y-3 mb-10">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-          Let&apos;s Connect
-        </h2>
-        <p className="max-w-xl mx-auto text-sm sm:text-base text-zinc-400">
-          I&apos;m currently open to new opportunities and collaborations. 
-          Feel free to reach out!
-        </p>
-      </div>
+    <section id="contact" className="scroll-mt-28 pb-4 md:pb-8">
+      <SectionHeader
+        eyebrow="Contact"
+        title="Let's Connect"
+        description="I'm currently open to new opportunities and collaborations. Feel free to reach out!"
+      />
 
-      {/* Card with Spotlight Effect */}
-      <div 
+      <div
         onMouseMove={handleMouseMove}
-        className="group relative mx-auto max-w-3xl rounded-2xl border border-zinc-800 bg-zinc-900/50 p-6 sm:p-10 shadow-2xl overflow-hidden"
+        className="group relative mx-auto max-w-3xl overflow-hidden rounded-2xl border border-border bg-surface/95 p-6 shadow-[0_24px_64px_-24px_rgba(0,0,0,0.55)] backdrop-blur-xl transition duration-300 hover:border-accent/30 hover:shadow-[0_28px_72px_-20px_rgba(167,139,250,0.15)] sm:p-10"
       >
         <motion.div
           className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition duration-300 group-hover:opacity-100"
           style={{
             background: useMotionTemplate`
               radial-gradient(
-                600px circle at ${mouseX}px ${mouseY}px,
-                rgba(16, 185, 129, 0.08),
-                transparent 80%
+                520px circle at ${mouseX}px ${mouseY}px,
+                rgba(167, 139, 250, 0.11),
+                transparent 75%
               )
             `,
           }}
+          aria-hidden
         />
 
-        <div className="relative z-10 flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div className="space-y-3">
-            <h3 className="text-xl font-semibold text-white">Contact Details</h3>
-            <p className="text-zinc-400 max-w-xs text-sm">
+        <div className="relative z-10 flex flex-col gap-10 md:flex-row md:items-start md:justify-between md:gap-12">
+          <div className="max-w-sm space-y-3">
+            <h3 className="font-display text-xl font-semibold text-foreground">Contact Details</h3>
+            <p className="text-sm leading-relaxed text-muted">
               I usually respond within 24 hours. Feel free to call or email me directly.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 text-sm sm:text-base">
-            {/* Phone Number */}
-            <div className="flex flex-col space-y-1">
-              <span className="text-zinc-500 text-[10px] uppercase tracking-[0.2em] font-bold">Phone</span>
-              <a 
-                href="tel:+201102361856" 
-                className="font-medium text-zinc-100 hover:text-emerald-400 transition-colors"
+          <div className="grid min-w-0 flex-1 grid-cols-1 gap-6 text-sm sm:text-base">
+            <div className="flex flex-col gap-1">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                Phone
+              </span>
+              <a
+                href="tel:+201102361856"
+                className="font-medium text-foreground transition hover:text-accent"
               >
                 +20 110 236 1856
               </a>
             </div>
 
-            {/* Email */}
-            <div className="flex flex-col space-y-1">
-              <span className="text-zinc-500 text-[10px] uppercase tracking-[0.2em] font-bold">Email</span>
-              <span className="font-medium text-zinc-100">ahmeedemadmohamed@gmail.com</span>
+            <div className="flex flex-col gap-1">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                Email
+              </span>
+              <span className="font-medium text-foreground">ahmeedemadmohamed@gmail.com</span>
             </div>
-            
-            {/* LinkedIn */}
-            <div className="flex flex-col space-y-1">
-              <span className="text-zinc-500 text-[10px] uppercase tracking-[0.2em] font-bold">LinkedIn</span>
+
+            <div className="flex flex-col gap-1">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                LinkedIn
+              </span>
               <a
                 href="https://www.linkedin.com/in/ahmeedemad/"
-                className="font-medium text-emerald-400 hover:text-emerald-300 transition-colors"
+                className="font-medium text-accent transition hover:brightness-110"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -84,12 +82,13 @@ export function ContactSection() {
               </a>
             </div>
 
-            {/* CV / Resume */}
-            <div className="flex flex-col space-y-1">
-              <span className="text-zinc-500 text-[10px] uppercase tracking-[0.2em] font-bold">Resume</span>
+            <div className="flex flex-col gap-1">
+              <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                Resume
+              </span>
               <a
                 href="https://drive.google.com/file/d/1R80SVHl5AB8g8zJxhlGmVHFC0nCAeFJu/view?usp=sharing"
-                className="font-medium text-emerald-400 hover:text-emerald-300 transition-colors inline-flex items-center gap-1.5"
+                className="inline-flex items-center gap-1.5 font-medium text-accent transition hover:brightness-110"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,7 +98,7 @@ export function ContactSection() {
 
             <MagneticButton
               href="mailto:ahmeedemadmohamed@gmail.com"
-              className="mt-4 inline-flex items-center justify-center rounded-xl bg-emerald-500 px-8 py-3 text-sm font-bold text-black shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-400 active:scale-95"
+              className="mt-2 inline-flex h-12 w-full items-center justify-center rounded-xl bg-foreground px-8 text-sm font-semibold text-background shadow-lg transition hover:brightness-110 sm:w-auto"
             >
               Send Me an Email
             </MagneticButton>

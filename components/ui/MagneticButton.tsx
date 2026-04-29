@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useReducedMotionAfterHydration } from "@/lib/hooks/useReducedMotionAfterHydration";
 import type { MagneticButtonProps } from "@/lib/types";
 
 export function MagneticButton({
@@ -9,6 +10,7 @@ export function MagneticButton({
   strength = 10,
   ...props
 }: MagneticButtonProps) {
+  const reduceMotion = useReducedMotionAfterHydration();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const spring = { stiffness: 300, damping: 20 };
@@ -16,6 +18,7 @@ export function MagneticButton({
   const ySpring = useSpring(y, spring);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    if (reduceMotion) return;
     const rect = e.currentTarget.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
@@ -31,17 +34,19 @@ export function MagneticButton({
   };
 
   const isLink = "href" in props && props.href != null;
-  const motionProps = {
-    whileHover: { scale: 1.05 },
-    whileTap: { scale: 0.95 },
-    transition: { type: "spring" as const, stiffness: 400, damping: 17 },
-  };
+  const motionProps = reduceMotion
+    ? {}
+    : {
+        whileHover: { scale: 1.02 },
+        whileTap: { scale: 0.98 },
+        transition: { type: "spring" as const, stiffness: 450, damping: 28 },
+      };
 
   return (
     <motion.div
-      style={{ x: xSpring, y: ySpring }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
+      style={reduceMotion ? undefined : { x: xSpring, y: ySpring }}
+      onMouseMove={reduceMotion ? undefined : handleMouseMove}
+      onMouseLeave={reduceMotion ? undefined : handleMouseLeave}
       className="inline-block"
     >
       {isLink ? (
