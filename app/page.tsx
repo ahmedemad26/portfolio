@@ -11,29 +11,38 @@ const projects: Project[] = [
   {
     title: "Rose App — Flower E‑commerce",
     description:
-      "A bilingual (EN/AR) flower e‑commerce platform with RTL support, dark mode, secure authentication and a modern shopping experience.",
+      "Built a bilingual (EN/AR) e-commerce storefront with admin dashboard and analytics using Next.js App Router, SSG product pages, and dynamic category routing on Vercel.",
     tech: ["React", "Next.js", "Tailwind CSS", "React Query"],
     image: "/assets/rose-app.png",
     codeLink: "https://github.com/ahmedemad26/Rose-App",
     liveLink: "https://rose-app-six.vercel.app/",
   },
   {
-    title: "Exclusive — E‑commerce Platform",
+    title: "Rafiq App",
     description:
-      "A full e‑commerce experience built with Next.js 14, featuring secure checkout, authentication, product filtering and a modern responsive UI.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
-    image: "/assets/exclusive.png",
-    codeLink: "https://github.com/ahmedemad26/e-commerce-exlusive",
-    liveLink: "https://e-commerce-exlusive.vercel.app/",
+      "A high-performance project management system built to streamline collaboration and workflow efficiency through a clear hierarchy of Projects, Epics, and Tasks.",
+    tech: ["Next.js", "Tailwind CSS", "shadcn/ui", "Supabase"],
+    image: "/assets/pic.jpg",
+    codeLink: "https://github.com/ahmedemad26/Rafiq-App",
+    liveLink: "https://taskly-rafiq-app.vercel.app/",
   },
   {
     title: "Exam App",
     description:
-      "Online exam and quiz platform with authentication, diplomas, timed exams, results and a modern dashboard experience.",
+      "A full-featured exam platform with role-based access (student/admin/instructor), protected middleware routes, JWT authentication, and validated forms via React Hook Form.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "TanStack Query"],
     image: "/assets/exam-app.png",
     codeLink: "https://github.com/ahmedemad26/Exam-App",
     liveLink: "https://online-exam-app-platform.vercel.app/",
+  },
+  {
+    title: "Exclusive — E‑commerce Platform",
+    description:
+      "Developed a fully responsive e-commerce experience with dynamic product filtering, cart state management via React Context, and optimized image delivery using Next.js image optimization.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "Supabase"],
+    image: "/assets/exclusive.png",
+    codeLink: "https://github.com/ahmedemad26/e-commerce-exlusive",
+    liveLink: "https://e-commerce-exlusive.vercel.app/",
   },
 ];
 
